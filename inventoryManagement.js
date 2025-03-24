@@ -1,7 +1,14 @@
 // Write your code here
-
-
-
+let products=["Laptop","Phone","HeadPhones","Monitor"]
+function logFirstProduct (){
+  console.log (products[0])
+}
+function updateProductName(pos,name){
+  products[pos]=name
+}
+function removeLastProduct(){
+  products.pop()
+}
 // Export the necessary parts for testing
 module.exports = {
   logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
